@@ -1,146 +1,197 @@
 /* login form*/
-html *{
-  margin: 0%;
-  padding: 0%;
+html * {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   font-size: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box; /* important for responsive layouts */
 }
 
-body{
+body {
   background: #1d221a;
   color: antiquewhite;
   overflow: auto;
-  
 }
 
-.login-form .flex-container{
+.login-form .flex-container {
   display: flex;
   justify-content: space-between;
 }
-.login-form h1{
+
+.login-form h1 {
   font-size: 2rem;
   margin-top: 2rem;
 }
-.logo img{
-  margin: 10px;
+
+.logo img {
+  margin: 1rem;
   width: 7rem;
   border-radius: 50%;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 0.3rem 0.3rem 0.625rem black;
 }
-.flex-container{
+
+.flex-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-main{
+
+main {
   display: flex;
   justify-content: center;
 }
-fieldset{
-  height: 150vh;
+
+fieldset {
+  min-height: 90vh;
   width: 90%;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background: #0a0a0a46;
   border: none;
-  box-shadow: 5px 5px 10px black,-5px -5px 10px black;
+  box-shadow: 0.3125rem 0.3125rem 0.625rem black, -0.3125rem -0.3125rem 0.625rem black;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: auto;
-
 }
-legend{
+
+legend {
   margin-left: auto;
   margin-right: auto;
   font-size: 1.5rem;
   font-weight: bold;
   padding: 1%;
 }
-legend img{
+
+legend img {
   width: 7rem;
   border-radius: 50%;
 }
-form{
 
+form {
   display: grid;
-  grid-template-columns: 1fr 2fr .3fr;
-  grid-template-rows: .5fr .5fr .5fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr 2fr 0.3fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr;
+  gap: 1.25rem;
   overflow: auto;
 }
-.Dont-have-account{
+
+.Dont-have-account {
   margin-bottom: 10%;
   margin-top: 2rem;
   margin-right: auto;
   margin-left: auto;
   grid-column: span 3;
 }
-.Dont-have-account p{
+
+.Dont-have-account p {
   font-weight: 900;
   font-size: 1.5rem;
 }
 
-label{
+label {
   font-size: 1rem;
   font-weight: 900;
-  padding: 20px;
+  padding: 1.25rem;
 }
-input{
+
+input {
   font-size: 1rem;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 0.625rem;
+  padding: 0.625rem;
   border: none;
-  box-shadow: 1px 3px 7px rgb(0, 0, 0),-4px 3px 7px rgb(0, 0, 0);
-  
+  box-shadow: 0.0625rem 0.1875rem 0.4375rem rgb(0, 0, 0), -0.25rem 0.1875rem 0.4375rem rgb(0, 0, 0);
 }
+
 .submit {
-  border-radius: 10px;
+  border-radius: 0.625rem;
   margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
-  grid-column:  2;
+  grid-column: 2;
   font-size: 1rem;
   width: 100%;
   padding: 1.3rem;
   background-color: rgb(48, 49, 49);
   color: rgb(189, 189, 189);
-  box-shadow: 1px 3px 10px rgb(0, 0, 0),-4px 3px 10px rgb(0, 0, 0);
+  box-shadow: 0.0625rem 0.1875rem 0.625rem rgb(0, 0, 0), -0.25rem 0.1875rem 0.625rem rgb(0, 0, 0);
   transition: 0.5s;
 }
 
-.submit:hover,.submit:active{
+.submit:hover,
+.submit:active {
   background-color: #000000;
   color: bisque;
 }
-footer{
+
+footer {
   text-align: center;
-  height: 1vh;
+  height: 5vh;
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1rem ;
-  border-radius: 10px;
-  background-color:#1d221a;
+  font-size: 1rem;
+  border-radius: 0.625rem;
+  background-color: #1d221a;
   padding: 2rem;
-  box-shadow: 4px 3px 10px rgb(0, 0, 0),-4px -3px 10px rgb(0, 0, 0);
+  box-shadow: 0.25rem 0.1875rem 0.625rem rgb(0, 0, 0), -0.25rem -0.1875rem 0.625rem rgb(0, 0, 0);
 }
-@media (max-width: 800px){
-  fieldset{
-    height: 150vh;
+
+/* Responsive Breakpoints */
+@media (max-width: 1200px) {
+  form {
+    grid-template-columns: 1fr 1.2fr;
+    grid-template-rows: auto;
   }
-  form{
-    margin:45% inherit;
-  }
-  .Dont-have-account{
-    margin-bottom: 10%;
-  }
-}
-@media (max-width: 510px){
-  fieldset{
-    width: 90%;
-    overflow: auto;
+  .Dont-have-account {
+    grid-column: span 2;
   }
 }
 
+@media (max-width: 800px) {
+  fieldset {
+    min-height: 80vh;
+    width: 98%;
+  }
+  form {
+    margin: 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+  .Dont-have-account {
+    margin-bottom: 10%;
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 600px) {
+  fieldset {
+    min-height: 70vh;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+  form {
+    margin: 1rem 0.2rem;
+    gap: 0.5rem;
+  }
+  .logo img,
+  legend img {
+    width: 4rem;
+  }
+  .Dont-have-account p,
+  .login-form h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  form {
+    padding: 0.2rem;
+    font-size: 0.8rem;
+  }
+  label, input, .submit, footer {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}
