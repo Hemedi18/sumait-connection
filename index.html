@@ -1,55 +1,49 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#1d221a">
-  <title>home</title>
+  <title>Home</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="grid-container">
+  <div class="page-container">
     <header>
-      <nav class="flex-container">
+      <nav>
         <div class="logo">
-          <figure>
-            <img src="logo.png" alt="sumait connect logo" > 
-          </figure>
+          <img src="./assets/logo.png" alt="SUMAIT Connect logo">
         </div>
-
         <ul class="nav-links">
-          <li class="flex-item"><a href="login.html">login</a></li>
-          <li class="flex-item"><a href="signup.html">signup</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Signup</a></li>
         </ul>
       </nav>
     </header>
 
-  <main class="grid-item about">
-    <h2><strong>The aim of this website</strong></h2>
-    <p>SUMAIT Connect is a platform specifically designed for students of Abdulrahman Al-Sumait University. <br><br>
+    <main class="content-wrapper">
+      <section class="about-section">
+        <h2>The aim of this website</h2>
+        <p>SUMAIT Connect is a platform specifically designed for students of Abdulrahman Al-Sumait University. It fosters a safe, friendly, and innovative environment that encourages collaboration by allowing students to share notes, past papers, and access valuable learning resources.</p>
+      </section>
 
-      Through SUMAIT Connect, students can share notes, past papers, and access valuable learning resources. <br><br>
+      <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or suggestions, feel free to reach out to us:</p>
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:hemedimdoe18@gmail.com">hemedimdoe18@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> Phone: <a href="tel:+255678260396">+255 678 260 396</a></p>
+        <ul class="social-links">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </section>
+    </main>
 
-      We strive to foster a safe, friendly, and innovative environment that encourages collaboration.</p>
-  </main>
-
-  <address class="grid-item contact">
-    <h2><strong>Contact Us</strong></h2>
-    <p>If you have any questions or suggestions <br><br>
-    <i class="fas fa-envelope"></i> Email: <a href="mailto:hemedimdoe18@gmail.com">hemedimdoe18@gmail.com</a><br><br>
-    <i class="fas fa-phone"></i> Phone: <a href="tel:+255678260396">+255 678 260 396</a><br><br>
-    feel free to reach out to us:
-    <ul>
-      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-    </ul>
-  </address>
-
-  <footer>
-    <p>&copy; 2025 SUMAIT Connect. All rights reserved. Designed by Hemedimdoe</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 SUMAIT Connect. All rights reserved. Designed by Hemedimdoe</p>
+    </footer>
   </div>
   <script src="script.js"></script>
 </body>
