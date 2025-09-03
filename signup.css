@@ -1,0 +1,146 @@
+/* login form*/
+html *{
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  font-size: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  background: #1d221a;
+  color: antiquewhite;
+  overflow: auto;
+  
+}
+
+.login-form .flex-container{
+  display: flex;
+  justify-content: space-between;
+}
+.login-form h1{
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.logo img{
+  margin: 10px;
+  width: 7rem;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px black;
+}
+.flex-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main{
+  display: flex;
+  justify-content: center;
+}
+fieldset{
+  height: 150vh;
+  width: 90%;
+  border-radius: 20px;
+  background: #0a0a0a46;
+  border: none;
+  box-shadow: 5px 5px 10px black,-5px -5px 10px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+
+}
+legend{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1%;
+}
+legend img{
+  width: 7rem;
+  border-radius: 50%;
+}
+form{
+
+  display: grid;
+  grid-template-columns: 1fr 2fr .3fr;
+  grid-template-rows: .5fr .5fr .5fr 1fr;
+  gap: 20px;
+  overflow: auto;
+}
+.Dont-have-account{
+  margin-bottom: 10%;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  grid-column: span 3;
+}
+.Dont-have-account p{
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+label{
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 20px;
+}
+input{
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  box-shadow: 1px 3px 7px rgb(0, 0, 0),-4px 3px 7px rgb(0, 0, 0);
+  
+}
+.submit {
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 900;
+  grid-column:  2;
+  font-size: 1rem;
+  width: 100%;
+  padding: 1.3rem;
+  background-color: rgb(48, 49, 49);
+  color: rgb(189, 189, 189);
+  box-shadow: 1px 3px 10px rgb(0, 0, 0),-4px 3px 10px rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.submit:hover,.submit:active{
+  background-color: #000000;
+  color: bisque;
+}
+footer{
+  text-align: center;
+  height: 1vh;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem ;
+  border-radius: 10px;
+  background-color:#1d221a;
+  padding: 2rem;
+  box-shadow: 4px 3px 10px rgb(0, 0, 0),-4px -3px 10px rgb(0, 0, 0);
+}
+@media (max-width: 800px){
+  fieldset{
+    height: 150vh;
+  }
+  form{
+    margin:45% inherit;
+  }
+  .Dont-have-account{
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 510px){
+  fieldset{
+    width: 90%;
+    overflow: auto;
+  }
+}
+
